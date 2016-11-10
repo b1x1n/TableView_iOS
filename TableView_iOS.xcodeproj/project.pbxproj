@@ -15,6 +15,9 @@
 		FB4B29C11DD1F35700882BBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4B29BF1DD1F35700882BBE /* LaunchScreen.storyboard */; };
 		FB4B29CC1DD1F35700882BBE /* TableView_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4B29CB1DD1F35700882BBE /* TableView_iOSTests.m */; };
 		FB4B29D71DD1F35700882BBE /* TableView_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4B29D61DD1F35700882BBE /* TableView_iOSUITests.m */; };
+		FB4B29E81DD1F38200882BBE /* Persona.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4B29E71DD1F38200882BBE /* Persona.m */; };
+		FB4B29EB1DD1F46700882BBE /* DataSourceTablaPersonas.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4B29EA1DD1F46700882BBE /* DataSourceTablaPersonas.m */; };
+		FB4B29EE1DD2049C00882BBE /* ViewControllerDetalle.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4B29ED1DD2049C00882BBE /* ViewControllerDetalle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		FB4B29D21DD1F35700882BBE /* TableView_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableView_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4B29D61DD1F35700882BBE /* TableView_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableView_iOSUITests.m; sourceTree = "<group>"; };
 		FB4B29D81DD1F35700882BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4B29E61DD1F38200882BBE /* Persona.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persona.h; sourceTree = "<group>"; };
+		FB4B29E71DD1F38200882BBE /* Persona.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persona.m; sourceTree = "<group>"; };
+		FB4B29E91DD1F46700882BBE /* DataSourceTablaPersonas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSourceTablaPersonas.h; sourceTree = "<group>"; };
+		FB4B29EA1DD1F46700882BBE /* DataSourceTablaPersonas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSourceTablaPersonas.m; sourceTree = "<group>"; };
+		FB4B29EC1DD2049C00882BBE /* ViewControllerDetalle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDetalle.h; sourceTree = "<group>"; };
+		FB4B29ED1DD2049C00882BBE /* ViewControllerDetalle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerDetalle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,8 @@
 		FB4B29B01DD1F35700882BBE /* TableView_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FB4B29E51DD1F36600882BBE /* dataSourceTabla */,
+				FB4B29E41DD1F35E00882BBE /* entidades */,
 				FB4B29B41DD1F35700882BBE /* AppDelegate.h */,
 				FB4B29B51DD1F35700882BBE /* AppDelegate.m */,
 				FB4B29B71DD1F35700882BBE /* ViewController.h */,
@@ -110,6 +121,8 @@
 				FB4B29BF1DD1F35700882BBE /* LaunchScreen.storyboard */,
 				FB4B29C21DD1F35700882BBE /* Info.plist */,
 				FB4B29B11DD1F35700882BBE /* Supporting Files */,
+				FB4B29EC1DD2049C00882BBE /* ViewControllerDetalle.h */,
+				FB4B29ED1DD2049C00882BBE /* ViewControllerDetalle.m */,
 			);
 			path = TableView_iOS;
 			sourceTree = "<group>";
@@ -138,6 +151,24 @@
 				FB4B29D81DD1F35700882BBE /* Info.plist */,
 			);
 			path = TableView_iOSUITests;
+			sourceTree = "<group>";
+		};
+		FB4B29E41DD1F35E00882BBE /* entidades */ = {
+			isa = PBXGroup;
+			children = (
+				FB4B29E61DD1F38200882BBE /* Persona.h */,
+				FB4B29E71DD1F38200882BBE /* Persona.m */,
+			);
+			name = entidades;
+			sourceTree = "<group>";
+		};
+		FB4B29E51DD1F36600882BBE /* dataSourceTabla */ = {
+			isa = PBXGroup;
+			children = (
+				FB4B29E91DD1F46700882BBE /* DataSourceTablaPersonas.h */,
+				FB4B29EA1DD1F46700882BBE /* DataSourceTablaPersonas.m */,
+			);
+			name = dataSourceTabla;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4B29EE1DD2049C00882BBE /* ViewControllerDetalle.m in Sources */,
+				FB4B29EB1DD1F46700882BBE /* DataSourceTablaPersonas.m in Sources */,
+				FB4B29E81DD1F38200882BBE /* Persona.m in Sources */,
 				FB4B29B91DD1F35700882BBE /* ViewController.m in Sources */,
 				FB4B29B61DD1F35700882BBE /* AppDelegate.m in Sources */,
 				FB4B29B31DD1F35700882BBE /* main.m in Sources */,

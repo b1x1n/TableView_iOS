@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ViewControllerDetalle.h
 //  TableView_iOS
 //
 //  Created by Alumno on 08/11/16.
@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Persona.h"
-//Para recoger los eventos de la tabla tnemos que importar
 
+@interface ViewControllerDetalle : UIViewController
 
-@interface ViewController : UIViewController<UITableViewDelegate>
-
-
+@property Persona* personaSeleccionada;
 
 @end
-
